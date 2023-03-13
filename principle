@@ -1,1 +1,17 @@
 
+space  export
+{
+     struct interface Func 
+     {
+       Func1 func1;
+       Func2 func2;
+     }
+}
+
+1.space 和 struct类型要不同，这样可以避免strct和space的错误初始化.还能区分一串到底是space还是struct
+
+2. interface 禁止被实现。避免出现未实现被调用的情况。
+
+3.struct 的二进制接口规范
+  align：内部对齐方式。
+  struct分成函数表和参数表。
