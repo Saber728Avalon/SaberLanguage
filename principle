@@ -15,3 +15,7 @@ space  export
 3.struct 的二进制接口规范
   align：内部对齐方式。
   struct分成函数表和参数表。
+
+4.对于标记未interface的类型，要生成.itf文件,用来描述二进制接口。源码接口统一依靠interface,二进制接口统一依靠.itf文件
+
+5.不论是模块，还是主体程序 都必须要有saber.main文件，作为主程序入口文件
