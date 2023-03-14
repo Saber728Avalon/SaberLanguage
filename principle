@@ -19,3 +19,5 @@ space  export
 4.对于标记未interface的类型，要生成.itf文件,用来描述二进制接口。源码接口统一依靠interface,二进制接口统一依靠.itf文件
 
 5.不论是模块，还是主体程序 都必须要有saber.main文件，作为主程序入口文件
+
+6.多层空间使用时候采用.进行分割.例如 export.Func.Func1
