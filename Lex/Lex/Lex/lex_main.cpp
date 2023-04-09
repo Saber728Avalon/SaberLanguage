@@ -20,7 +20,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 		strMsg.append(buf, nRead);
 	}
-	std::list<LexItem> listInfo;
+	std::vector<LexItem> listInfo;
 	Lex(strMsg.c_str(), strMsg.length(), listInfo);
 	//dump½á¹û
 	Dump(listInfo, "D:\\worksapce\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl_lex");

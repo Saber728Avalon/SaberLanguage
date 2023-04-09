@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C99410C8-38CE-45EA-8C25-B001216A7A3B}</ProjectGuid>
+    <ProjectGuid>{26033240-C99D-49B9-9DFF-BA15D185E088}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Lex</RootNamespace>
+    <RootNamespace>syntax</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -39,6 +39,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\worksapce\SaberLanguage\SaberLanguage\Lex\Lex\Lex;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -75,22 +76,20 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\common\saber_list.h" />
-    <ClInclude Include="lex.h" />
-    <ClInclude Include="lex_header.h" />
+    <ClInclude Include="binary_tree.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="syntax.h" />
+    <ClInclude Include="syntax_header.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\common\saber_list.cpp" />
-    <ClCompile Include="lex.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Lex_main.cpp" />
+    <ClCompile Include="binary_tree.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="syntax.cpp" />
+    <ClCompile Include="syntax_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

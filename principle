@@ -21,3 +21,8 @@ space  export
 5.不论是模块，还是主体程序 都必须要有saber.main文件，作为主程序入口文件
 
 6.多层空间使用时候采用.进行分割.例如 export.Func.Func1
+
+7.函数定义
+	func int32 Add(int32 x, int32 y) {
+		return x + y;
+	}

@@ -34,6 +34,7 @@ enum SubKeyWord
 	SubInterface,		//interface
 	SubStruct	,		//struct
 	SubAlign	,		//align
+	SubFunc		,		//func
 
 
 	SubKeyWordCount
@@ -59,6 +60,7 @@ static char* SubKeyWordStr[] =
 	"interface",
 	"struct",
 	"align",
+	"func",
 
 	"",
 };

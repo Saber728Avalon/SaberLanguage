@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdio.h>
-#include <list>
+#include <vector>
 #include "lex_header.h"
 
 //词法分析时候的状态
@@ -24,7 +24,7 @@ struct LexItem
 };
 
 //词法分析
-int Lex(const char *pszSrc, int nLen, std::list<LexItem> &list); 
+int Lex(const char *pszSrc, int nLen, std::vector<LexItem> &list); 
 
 //显示结果
-int Dump(std::list<LexItem> &list, const char *pszFilePath);
+int Dump(std::vector<LexItem> &list, const char *pszFilePath);

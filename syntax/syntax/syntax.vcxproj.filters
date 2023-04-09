@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="common">
-      <UniqueIdentifier>{20cd0299-c9d2-4b02-8ff6-26636e141308}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -27,28 +24,28 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="lex.h">
+    <ClInclude Include="binary_tree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="lex_header.h">
+    <ClInclude Include="syntax_header.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\common\saber_list.h">
-      <Filter>common</Filter>
+    <ClInclude Include="syntax.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Lex_main.cpp">
+    <ClCompile Include="syntax.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="lex.cpp">
+    <ClCompile Include="binary_tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\common\saber_list.cpp">
-      <Filter>common</Filter>
+    <ClCompile Include="syntax_main.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 #include "lex.h"
 #include "lex_header.h"
 
-inline void PushList(std::list<LexItem> &list, MainLexType mainType, int subType, const char *pszChar, int nLen)
+inline void PushList(std::vector<LexItem> &list, MainLexType mainType, int subType, const char *pszChar, int nLen)
 {
 	LexItem item;
 	item.mainType = mainType;
@@ -18,7 +18,7 @@ inline void PushList(std::list<LexItem> &list, MainLexType mainType, int subType
 	list.emplace_back(item);
 }
 
-int TogetherStr(const char *pszStart, int nLen, std::list<LexItem> &list )
+int TogetherStr(const char *pszStart, int nLen, std::vector<LexItem> &list )
 {
 	bool bIsStr = false;
 	int i = 0;
@@ -44,7 +44,7 @@ int TogetherStr(const char *pszStart, int nLen, std::list<LexItem> &list )
 	return i;
 }
 
-int Lex(const char *pszSrc, int nLen, std::list<LexItem> &list)
+int Lex(const char *pszSrc, int nLen, std::vector<LexItem> &list)
 {
 	//记录特殊状态，主要是针对注释与字符串
 	AnalyzeState analyzeState = AnalyzeState::AnalyzeUnknown;
@@ -248,7 +248,7 @@ int Lex(const char *pszSrc, int nLen, std::list<LexItem> &list)
 	return 0;
 }
 
-int Dump(std::list<LexItem> &listItem, const char *pszFilePath)
+int Dump(std::vector<LexItem> &listItem, const char *pszFilePath)
 {
 	char buf[1024];
 	FILE *pFile = fopen(pszFilePath, "wb");
