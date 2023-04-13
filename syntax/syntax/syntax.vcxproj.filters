@@ -33,6 +33,9 @@
     <ClInclude Include="syntax.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Lex\Lex\Lex\lex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +48,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="syntax_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lex\Lex\Lex\lex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

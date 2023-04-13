@@ -248,7 +248,7 @@ int Lex(const char *pszSrc, int nLen, std::vector<LexItem> &list)
 	return 0;
 }
 
-int Dump(std::vector<LexItem> &listItem, const char *pszFilePath)
+int dump_lex(std::vector<LexItem> &listItem, const char *pszFilePath)
 {
 	char buf[1024];
 	FILE *pFile = fopen(pszFilePath, "wb");

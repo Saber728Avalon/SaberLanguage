@@ -27,4 +27,4 @@ struct LexItem
 int Lex(const char *pszSrc, int nLen, std::vector<LexItem> &list); 
 
 //ÏÔÊ¾½á¹û
-int Dump(std::vector<LexItem> &list, const char *pszFilePath);
+int dump_lex(std::vector<LexItem> &list, const char *pszFilePath);

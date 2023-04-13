@@ -9,7 +9,7 @@ struct binary_node
 	struct binary_node *p_left_node;
 	struct binary_node *p_right_node;
 	struct syntex_node node_info;
-}
+};
 
 static const char* s_bnf_item[] = {
 	"program"
@@ -54,3 +54,9 @@ static const char* s_bnf_item[] = {
 	, "logical_and_expression"
 	, "logical_not_expression"
 };
+
+//进行语法分析
+int syntax(std::vector<LexItem> &list, struct binary_node *p_node_root);
+
+//dump结果
+int dump_syntax(struct binary_node *p_node_root, char *p_file_path);

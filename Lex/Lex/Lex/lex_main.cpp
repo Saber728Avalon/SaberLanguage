@@ -8,7 +8,7 @@
 int _tmain(int argc, _TCHAR* argv[])
 {
 	char buf[1024];
-	FILE *pFile = fopen("D:\\worksapce\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl", "rb");
+	FILE *pFile = fopen("D:\\workspace\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl", "rb");
 	if (nullptr == pFile) {
 		return 0;
 	}
@@ -23,7 +23,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::vector<LexItem> listInfo;
 	Lex(strMsg.c_str(), strMsg.length(), listInfo);
 	//dump½á¹û
-	Dump(listInfo, "D:\\worksapce\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl_lex");
+	dump_lex(listInfo, "D:\\workspace\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl_lex");
 	return 0;
 }
 
