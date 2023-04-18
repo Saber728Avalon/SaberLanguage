@@ -3,13 +3,6 @@
 #include "lex.h"
 #include "syntax_header.h"
 
-//ast 语法树节点
-struct binary_node
-{
-	struct binary_node *p_left_node;
-	struct binary_node *p_right_node;
-	struct syntex_node node_info;
-};
 
 static const char* s_bnf_item[] = {
 	"program"
@@ -56,7 +49,7 @@ static const char* s_bnf_item[] = {
 };
 
 //进行语法分析
-int syntax(std::vector<LexItem> &list, struct binary_node *p_node_root);
+int syntax(std::vector<LexItem> &list, binary_node *p_node_root);
 
 //dump结果
-int dump_syntax(struct binary_node *p_node_root, char *p_file_path);
+int dump_syntax(binary_node *p_node_root, char *p_file_path);

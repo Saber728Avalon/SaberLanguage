@@ -1,13 +1,13 @@
-import ttt.qqqq.ccc
+import ttt.qqqq.ccc;
 
 //加法计算
-int32 Add(int32 xxx/*参数1*/, int16 &yyy/*参数1*/)
+func int32 Add(int32 xxx/*参数1*/, int16 &yyy/*参数1*/)
 {
 	return xxx + yyy;
 }
 
 //减法计算
-int32 Sub(int32 xxx/*参数1*/, int16 &yyy/*参数1*/)
+func int32 Sub(int32 xxx/*参数1*/, int16 &yyy/*参数1*/)
 {
 	xxx = xxx * (xxx + yyy);
 	xxx = xxx - yyy;
@@ -15,7 +15,7 @@ int32 Sub(int32 xxx/*参数1*/, int16 &yyy/*参数1*/)
 	return xxx / yyy;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+func int _tmain(int argc, _TCHAR* argv[])
 {
 	char buf[1024];
 	FILE *pFile = fopen("D:\\worksapce\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl", "rb");

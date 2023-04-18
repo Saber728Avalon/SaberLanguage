@@ -1,11 +1,9 @@
 // Lex.cpp : 定义控制台应用程序的入口点。
 //
-
-#include "stdafx.h"
 #include <iostream>
 #include "lex.h"
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 {
 	char buf[1024];
 	FILE *pFile = fopen("D:\\workspace\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl", "rb");

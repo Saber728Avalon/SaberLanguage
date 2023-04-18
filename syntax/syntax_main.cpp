@@ -1,8 +1,7 @@
-#include "stdafx.h"
 #include "syntax.h"
-#include "../../Lex/Lex/Lex/lex.h"
+#include "lex.h"
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 {
 	char buf[1024];
 	FILE *pFile = fopen("D:\\workspace\\SaberLanguage\\Lex\\source\\test.sl", "rb");
@@ -21,7 +20,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	Lex(strMsg.c_str(), strMsg.length(), listInfo);
 	
 	//”Ô∑®∑÷Œˆ
-	struct binary_node node;
+	binary_node node;
 	node.p_left_node = NULL;
 	node.p_right_node = NULL;
 	syntax(listInfo, &node);

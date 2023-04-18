@@ -8,12 +8,12 @@ inline void PushList(std::vector<LexItem> &list, MainLexType mainType, int subTy
 	item.subType = subType;
 	//保存数据
 	try {
-		item.strInfo.resize(nLen + 4);
+		item.strInfo.resize(nLen);
 	} catch(...) {
 	}
 	memcpy((void *)item.strInfo.c_str(), pszChar, nLen);
 	//增加\0
-	item.strInfo[nLen] = '\0';
+	//item.strInfo[nLen] = '\0';
 	//插入
 	list.emplace_back(item);
 }
