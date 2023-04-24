@@ -47,3 +47,4 @@ endif()
 
 add_subdirectory(Lex)
 add_subdirectory(syntax)
+add_subdirectory(bnf)
