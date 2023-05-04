@@ -29,15 +29,19 @@ ENDIF()
 
 set(BNF_HDRS
 	bnf.h
+	bnf_lex.h
+	bnf_lex_header.h
 )
 
 # 添加文件
 set(BNF_SRC 
 	bnf.cpp
+	bnf_lex.cpp
+	bnf_main.cpp
 )
 
 
 #调试用exe
 if(BUILD_TEST_EXECUTABLES)
-	add_executable(test_bnf ${BNF_SRC})
+	add_executable(test_bnf ${BNF_HDRS} ${BNF_SRC})
 endif()

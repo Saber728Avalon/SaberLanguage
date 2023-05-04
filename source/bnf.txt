@@ -1,0 +1,7 @@
+//程序定义
+<program>::=<import_body> | <program_body>
+
+<import_body>::= "struct" 
+<program_body>::="xxxx"
+
+

@@ -41,5 +41,5 @@ set(SYNTAX_SRC
 
 #调试用exe
 if(BUILD_TEST_EXECUTABLES)
-	add_executable(test_syntax ${SYNTAX_SRC})
+	add_executable(test_syntax  ${SYNTAX_HDRS} ${SYNTAX_SRC})
 endif()

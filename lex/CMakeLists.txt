@@ -41,5 +41,5 @@ set(LEX_SRC
 
 #调试用exe
 if(BUILD_TEST_EXECUTABLES)
-	add_executable(test_lex ${LEX_SRC})
+	add_executable(test_lex ${LEX_HDRS} ${LEX_SRC})
 endif()

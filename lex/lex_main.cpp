@@ -6,7 +6,7 @@
 int main(int argc, char* argv[])
 {
 	char buf[1024];
-	FILE *pFile = fopen("D:\\workspace\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl", "rb");
+	FILE *pFile = fopen("D:\\workspace\\SaberLanguage\\SaberLanguage\\source\\test.sl", "rb");
 	if (nullptr == pFile) {
 		return 0;
 	}
@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 	std::vector<LexItem> listInfo;
 	Lex(strMsg.c_str(), strMsg.length(), listInfo);
 	//dump½á¹û
-	dump_lex(listInfo, "D:\\workspace\\SaberLanguage\\SaberLanguage\\Lex\\source\\test.sl_lex");
+	dump_lex(listInfo, "D:\\workspace\\SaberLanguage\\SaberLanguage\\source\\test.sl_lex");
 	return 0;
 }
 
